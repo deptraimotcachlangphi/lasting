@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container{
+    padding: 20px 15%;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.element, .element1{
+    display: flex;
+    justify-content: center;
+}
+
+.element1 a{
+    margin-right: 20px;
+}
+
+#slogan {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#slogan p {
+    line-height: 28px;
+}
+
+#slogan .slogan_image {
+    width: 40%;
+    margin-top: 20px;
+}
+
+#slogan .slogan_image img {
+    width: 100%;
+}
+
+#slogan .slogan_text{
+    width: 50%;
+}
+
+.slogan_text_first {
+    padding: 20px;
+    font-size: 14px;
+    text-align: left;
+    line-height: 28px;
+}
+
+.params {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+}
+
+.main_params{
+    color: #FE6B01;
+    font-size: 36px;
+}
+
+.detail_params {
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+#service, #partner {
+    margin-top: 50px;
+    padding: 10px 0%;
+}
+
+.title {
+    text-align: center;
+    color: #FE6B01;
+}
+
+.all {
+    background-color: #EBEBE2;
+    padding: 2%;
+}
+
+.list_service, .list_partner{
+    margin-top: 30px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.service_element{
+    text-align: center;
+    border: 1px solid #D2D2D2;
+    padding: 20px 10px;
+    border-radius: 8px;
+    width: 19%;
+}
+
+.price {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.save {
+    margin-top: 20px;
+    background-color: #F1F1F1;
+    border-radius: 8px;
+    width: 65%;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+.button {
+    margin-top: 20px;
+    background-color: #FE6B01;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 80%;
+    padding: 8px;
+    margin: 20px auto;
+}
+
+.partner_element img {
+    width: 50%;
+    display: block; margin-left: auto; margin-right: auto;
+}
+
+#partner {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px 0%;
+}
+
+.partner_element {
+    width: 23%;
+}
+
+#footer{
+    padding: 20px 0%;
+    margin-top: 50px;
+    border-top: 1px solid #D2D2D2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_element{
+    width: 30%;
+    justify-items: left;
+    font-size: 14px;
+}
+
+.footer_element p {
+    line-height: 30px;
+}
+
+.footer_element a {
+    color: #FE6B01;
+}
+
+.maintext {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.containerx {
+    width: 100%;
+    margin: auto;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* mặc định được ẩn đi */
+    position: fixed; /* vị trí cố định */
+    z-index: 1; /* Ưu tiên hiển thị trên cùng */
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+ 
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    line-height: 32px;
+}
+ 
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+ 
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content {
+    font-size: 14px;
+}
+
+.modal-content > .button {
+    width: 200px;
+}
+
+.modal-content > .button a{
+    color: #fff;
+} 
+@media only screen and (max-width: 600px) {
+    .all{
+        padding: 0%;
+    }
+
+    .container {
+        padding: 4%;
+    }
+
+    #slogan  {
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #slogan .slogan_image{
+        width: 100%;
+    }
+
+    .list_service {
+        padding: 10px 8%;
+    }
+
+    .service_element, .footer_element {
+        margin-top: 20px;
+    }
+    #slogan .slogan_text, .service_element, .footer_element {
+        width: 100%;
+    }
+
+    .params {
+        text-align: left;
+    }
+
+    .params, .list_service, #slogan, #footer {
+        display: block;
+    }
+
+    .params p {
+        display: inline-block;
+    }
+
+    .main_params {
+        font-size: 28px;
+    }
+
+    .detail_params {
+        margin-top: 0px;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    .params_element:first-child {
+        margin-top: 0px;
+    }
+    .params_element {
+        margin-top: 20px;
+    }
+
+    .element1 {
+        display: none;
+    }
+
+    .service_element > .slogan_text_first {
+        margin:  0 auto;
+        text-align: center;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+  }
